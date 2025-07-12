@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasser Jordan Tours</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: #f8f5f0; margin: 0; padding: 0; }
+        header { background: #b3541e; color: white; padding: 1em; text-align: center; }
+        section { padding: 2em; display: none; }
+        h2 { color: #b3541e; }
+        .content { background: #fff; margin: 1em auto; padding: 1.5em; border-radius: 8px; max-width: 800px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { background: #222; color: white; text-align: center; padding: 1em; }
+        .lang-buttons { text-align: center; margin: 1em; }
+        button { margin: 0 5px; padding: 10px 20px; border: none; background-color: #b3541e; color: white; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #8a3f17; }
+    </style>
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('section').forEach(s => s.style.display = 'none');
+            document.querySelectorAll('.' + lang).forEach(s => s.style.display = 'block');
+        }
+        window.onload = function() {
+            switchLang('ar');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Yasser Jordan Tours</h1>
+        <div class="lang-buttons">
+            <button onclick="switchLang('ar')">العربية</button>
+            <button onclick="switchLang('it')">Italiano</button>
+        </div>
+    </header>
+
+    <!-- Arabic Content -->
+    <section class="ar content">
+        <h2>من نحن</h2>
+        <p>نحن عائلة بدوية من جنوب الأردن، نؤمن بكرم الضيافة ونشارك ثقافتنا مع زوارنا من كل أنحاء العالم.</p>
+        <h2>خدماتنا</h2>
+        <ul>
+            <li>جولات: البتراء، وادي رم، البحر الميت، جبل نيبو، العقبة</li>
+            <li>تجارب محلية: طعام بدوي، رسم الحناء، جلسات ثقافية، لباس تقليدي</li>
+        </ul>
+        <h2>احجز الآن</h2>
+        <p>📱 00962798298128<br>📧 Yasserrawa2014@gmail.com</p>
+        <h2>آراء الزوار</h2>
+        <blockquote>“تجربة لا تُنسى، الطعام لذيذ وياسر إنسان رائع!” – سائح من إيطاليا</blockquote>
+        <blockquote>“أشعر أنني عدت بالزمن إلى حياة الأجداد.” – زائر من فرنسا</blockquote>
+        <h2>تواصل معنا</h2>
+        <p>📍 قرية الراجف، جنوب الأردن<br>📱 واتساب: +962 7 9829 8128<br>📧 Yasserrawa2014@gmail.com</p>
+    </section>
+
+    <!-- Italian Content -->
+    <section class="it content">
+        <h2>Chi siamo</h2>
+        <p>Siamo una famiglia beduina del sud della Giordania. Crediamo nell’ospitalità e condividiamo la nostra cultura con il mondo.</p>
+        <h2>I nostri servizi</h2>
+        <ul>
+            <li>Tour: Petra, Wadi Rum, Mar Morto, Monte Nebo, Aqaba</li>
+            <li>Esperienze locali: cibo beduino, henné, sessioni culturali, abiti tradizionali</li>
+        </ul>
+        <h2>Prenota ora</h2>
+        <p>📱 +962 7 9829 8128<br>📧 Yasserrawa2014@gmail.com</p>
+        <h2>Recensioni</h2>
+        <blockquote>“Un’esperienza indimenticabile! Il cibo era delizioso e Yasser una guida fantastica.” – Turista dall’Italia</blockquote>
+        <blockquote>“Mi sono sentito come tornato indietro nel tempo.” – Visitatore dalla Francia</blockquote>
+        <h2>Contattaci</h2>
+        <p>📍 Villaggio Al-Rajef, sud della Giordania<br>📱 WhatsApp: +962 7 9829 8128<br>📧 Yasserrawa2014@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yasser Jordan Tours. جميع الحقوق محفوظة. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
